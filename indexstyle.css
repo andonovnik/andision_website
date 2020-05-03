@@ -1,0 +1,270 @@
+﻿body {
+    font-family: sans-serif;
+    margin: 0 auto;
+}
+/* HEADER */
+.header {
+    padding: 1px;
+    background: #1c1c1c;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+}
+.titleHolder{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 14px;
+    padding-top: 6px;
+}
+
+.titleHolder a{
+    height: 60px;
+}
+
+.titleHolder img{
+    margin: 0;
+    width: 72px;
+    height: auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+.navbar a {
+    list-style: inside;
+    margin: 0px 10px 18px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+.navbar a.selected {
+    color: #d7d7d7;
+}
+
+.navbar a.selectable:hover {
+    color: #d7d7d7;
+}
+
+/* CONTENT */
+
+.content .first {
+    background-color: #57c0ed;
+    background-image: url('/paperglide/graphics/paperglideWebBackground.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Support */
+.second {
+    display: flex;
+    background-color: #fafafa;
+    justify-content: center;
+    text-align: center;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.contentLeft {
+    padding: 0px 32px 0px 15px;
+    text-align: right;
+    color: #898989;
+}
+
+.second .content h1 {
+    color: #727272;
+}
+
+.contentRight {
+    padding: 34px 15px 0px 64px;
+}
+
+.contentRight a {
+    color: #3080ce;
+    font-size: xx-large;
+    text-decoration: none;
+    font-family: Arial;
+}
+
+.contentRight a:hover {
+    text-decoration: underline;
+    color: #1e65ab;
+}
+
+/* DESKTOP */
+@media screen and (min-width: 961px) {
+    .content .first {
+        height: 800px;
+        display: flex;
+        padding-top: 132px;
+        justify-content: center;
+        padding-bottom: 36px;
+    }
+
+    .firstLeft {
+        margin: auto;
+        margin-right: 0;
+        padding-left: 12px;
+    }
+
+    .firstRight {
+        margin: auto;
+        margin-left: 0;
+        text-align: center;
+        color: white;
+    }
+    
+    .firstRight img {
+        width: 60%;
+    }
+
+    .paperglideIco {
+        max-width: 100%;
+    }
+}
+
+/* TABLET */
+@media screen and (max-width: 960px) {
+    .content {
+        margin-top: 48px;
+    }
+
+    .navbar a {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: larger;
+    }
+
+    .content .first {
+        margin: 0 auto;
+    }
+
+    .firstLeft{
+        padding-top: 96px;
+    }
+
+    .firstRight {
+        color: white;
+        text-align: center;
+    }
+
+    .firstRight img{
+        width: 50%;
+        min-width: 400px;
+    }
+
+    .paperglideIco {
+        max-width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Support */
+
+    .second {
+        display: unset;
+        overflow-wrap: normal;
+    }
+
+    .contentLeft {
+        text-align: center;
+        padding: 1px;
+    }
+    
+    .contentLeft p {
+        padding: 4px 16px 2px 16px;
+    }
+
+    .contentRight {
+        display: flex;
+        justify-content: center;
+        padding: 16px;
+    }
+}
+/* PHONE */
+@media screen and (max-width: 600px){
+    .content{
+        margin-top: 80px;
+    }
+    .navbar a{
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: larger;
+    }
+    .first {
+        position: relative;
+        overflow-wrap: normal;
+    }
+
+    .firstLeft{
+        padding-top: 24px;
+    }
+
+    .firstRight img{
+        min-width: 200px;
+    }
+
+    .text h1 {
+        font-size: 26px;
+    }
+
+    .paperglideIco {
+        max-width: 90%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .firstRight img{
+        width: 76%;
+    }
+
+    /* Support */
+    .second {
+        display: unset;
+        overflow-wrap: normal;
+    }
+
+    .contentLeft h1 {
+        padding: 0 20px 0 20px;
+    }
+
+    .contentLeft p {
+        padding: 4px 12px 2px 12px;
+        margin-bottom: 2px;
+        font-size: large;
+    }
+
+    .contentRight {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .contentRight a {
+        font-size: 26px;
+    }
+}
+
+
+
+/* FOOTER */
+.footer{
+    padding: 12px 0px 12px 0px;
+    text-align: center;
+    font-size: small;
+    background: #ddd;
+}
+
+.footer a{
+    text-decoration: none;
+    color:gray;
+}
+
+.footer a:hover{
+    text-decoration: underline;
+}
