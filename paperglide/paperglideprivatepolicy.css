@@ -1,0 +1,48 @@
+body
+{
+    font-family: sans-serif;
+    margin: 0 auto;
+}
+
+/* DESKTOP */
+@media screen and (min-width: 961px) {
+    .content {
+        font-size: large;
+        padding-left: 22px;
+    }
+    .footer {
+        font-size: large;
+        padding-left: 22px;
+        padding-bottom: 22px;
+    }
+}
+
+/* TABLET */
+@media screen and (max-width: 960px) {
+    .content {
+        font-size: larger;
+        padding-left: 22px;
+    }
+    .footer {
+        font-size: larger;
+        padding-left: 22px;
+        padding-bottom: 22px;
+    }
+}
+
+/* PHONE */
+@media screen and (max-width: 600px) {
+    .content {
+        font-size: x-large;
+        text-align: center;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .footer {
+        font-size: large;
+        text-align: center;
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-bottom: 22px;
+    }
+}
