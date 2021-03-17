@@ -1,6 +1,7 @@
 ﻿body {
     font-family: sans-serif;
     margin: 0 auto;
+    background-color: #373737;
 }
 /* HEADER */
 .header {
@@ -62,7 +63,7 @@
 /* Support */
 .second {
     display: flex;
-    background-color: #fafafa;
+    background-color: #313131;
     justify-content: center;
     text-align: center;
     margin-top: 12px;
@@ -72,7 +73,7 @@
 .contentLeft {
     padding: 0px 32px 0px 15px;
     text-align: right;
-    color: #898989;
+    color: #d0d0d0;
 }
 
 .second .content h1 {
@@ -253,11 +254,21 @@
 
 
 /* FOOTER */
-.footer{
+.footerText {
+    color: #d3d3d3;
+}
+
+.social-links {
+    background: #3a3a3a;
+    padding: 18px;
+    margin-bottom: 14px;
+}
+
+.footer {
     padding: 12px 0px 12px 0px;
     text-align: center;
     font-size: small;
-    background: #ddd;
+    background: #373737;
 }
 
 .footer a{
